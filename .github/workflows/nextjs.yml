@@ -37,7 +37,7 @@ jobs:
 
       # 步骤4：使用pnpm安装项目依赖
       - name: 安装项目依赖
-        run: pnpm install
+        run: pnpm install  --no-frozen-lockfile
         # 可选：若依赖安装缓慢，可添加镜像源（如国内环境）
         # env:
         #   PNPM_REGISTRY: https://registry.npmmirror.com
