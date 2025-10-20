@@ -35,6 +35,7 @@ jobs:
       - name: Detect package manager and lockfile
         id: detect-package-manager
         run: |
+          npm install pnpm
           # Prefer yarn.lock, then package-lock.json. If only package.json exists, fall back to npm install (no cache).
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
