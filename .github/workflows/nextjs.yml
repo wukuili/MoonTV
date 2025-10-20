@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 20.x
           # 缓存npm依赖（可选，提速后续构建）
-          cache: 'npm'
+          cache: ''
 
       # 步骤3：安装pnpm包管理器
       - name: 安装pnpm
